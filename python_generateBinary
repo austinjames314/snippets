@@ -1,0 +1,16 @@
+def generateBinary(n):
+  answer = 0
+  while(n>0):
+    x = 1
+    while(1==1):
+      if(2 ** x > n):
+        x -= 1
+        n -= 2 ** x
+        answer += 10 ** x
+        break
+      else:
+        x += 1
+  print(answer)
+
+n = int(input())
+generateBinary(n)
